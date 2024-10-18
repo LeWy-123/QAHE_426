@@ -1,5 +1,7 @@
-direction = input("Towards wich directionmn should I go (up, down, left, right): ")
+# prompt the user for direction
+direction = input("Towards which direction should I go (up, down, left, right): ")
 
+# If statements for branching
 if direction == "up":
     print("I am moving in upward direction")
 elif direction == "down":
