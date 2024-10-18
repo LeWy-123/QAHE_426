@@ -19,10 +19,12 @@ dinner_invites.insert(0, 'Daphne')
 mid_list = int(len(dinner_invites) / 2 )
 dinner_invites.insert(mid_list, 'David')
 dinner_invites.append('Barbara')
+dinner_invites.sort()
 
 for invite in dinner_invites:
     print(f"I would like to invite {invite.title()}, to my dinner! sorry for another dinner invitation!")
 
+print(f"Sent invitations: {len(dinner_invites)}")
 print(inivtation)
 print("Sorry I can't invite more than 2 people, my new dinner table wont arrive!")
 
