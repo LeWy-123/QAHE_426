@@ -1,8 +1,8 @@
 
-def which_is_the_greater(loop_lenght=5, i = 0):
+def which_is_the_greater(loop_length=5, i = 0):
     even_counter = 0
     odd_counter = 0
-    while i < loop_lenght:
+    while i < loop_length:
         input_number = int(input(f"No: {i} - Enter a number: "))
         if input_number % 2 == 0:
             even_counter += 1
