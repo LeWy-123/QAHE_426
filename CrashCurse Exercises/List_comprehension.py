@@ -6,8 +6,8 @@ for i in range(0, 21):
 print("--------- Exercise 1 ended ---------")
 
 one_million_numbers = [value for value in range(1, 1_000_001)]
-for number in one_million_numbers:
-    print(f"Number: {number}")
+#for number in one_million_numbers:
+#    print(f"Number: {number}")
 
 print("--------- Exercise 2 ended ---------")
 
@@ -33,3 +33,8 @@ j = 0
 for i in cubes:
     print(f"Cube of {j} is {i}")
     j += 1
+
+print("--------- Exercise 6 ended ---------")
+twod_array = [[0 for i in range(10)] for j in range(2)]
+
+print(twod_array, sep='\n\n', end='\n')
