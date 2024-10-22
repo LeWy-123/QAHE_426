@@ -8,7 +8,7 @@ def book_type_function():
     print("Finished reading books")
 
 def activity_function():
-    activity = input("Please enter avtivity to be performed: ")
+    activity = input("Please enter activity to be performed: ")
     if activity == "calculate":
         print("Performing calculations")
     else:
