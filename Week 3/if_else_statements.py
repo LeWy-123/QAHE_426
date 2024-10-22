@@ -14,7 +14,7 @@ else:
     print(f'What did you type man? :D ({user_input}), that\'s not included! in the program')
 
 
-# Taks 2 in week 2
+# Task 2 in week 2
 print('Enter the activity to be performed: ')
 user_input = input('Answer> ').lower()
 if user_input == 'calculate' or 'calc' or 'calculation':
@@ -26,3 +26,5 @@ if user_input == 'calculate' or 'calc' or 'calculation':
         print('It wasn\'t valid mathematical')
 
 print('Activity completed!')
+
+# Task 3 week 2
