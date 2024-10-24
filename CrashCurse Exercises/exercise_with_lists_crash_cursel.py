@@ -44,3 +44,11 @@ print(invitation)
 del dinner_invites[-1]
 del dinner_invites[-1]
 print("List: ", dinner_invites)
+
+print('-------------test codes------------------')
+
+new_invites = [*dinner_invites[:], *(X for X in range(15)), 'End list', 'Element', 'File']
+print(f'type of the variable: {type(new_invites)}, and the length of the list are: {len(new_invites)}', new_invites, sep='\n')
+rectangle ='\t \U000025A3'
+for O in new_invites:
+    print(rectangle, O)
