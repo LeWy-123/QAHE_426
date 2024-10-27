@@ -26,14 +26,17 @@ def dictionary_game():
 
 # 6-2 Favorite Number
 peoples_fav_numbers = {
-    'Barbara': 7,
-    'Daphne': 3,
-    'Béla': 100,
-    'Atilla': 9
+    'Barbara': [7, 5, 3, 11],
+    'Daphne': [3, 8, 9, 66, 69],
+    'Béla': [100, 15, 18],
+    'Atilla': [9, 3]
 }
 
-#for key, value in peoples_fav_numbers.items():
-#    print(f'{key}\'s favorite number is {value}')
+for key, value in peoples_fav_numbers.items():
+    print(f'{key}\'s favorite numbers is', end='')
+    for numbers in value:
+        print(f', {numbers}', end='')
+    print()
 
 # 6-3 Glossary
 glossary = {
@@ -100,22 +103,42 @@ def favorite_languages_of_peoples():
 
 
 # 6-8 Pets:
-pets_details = {
-    'Cat': {
-        'name' : 'Poppy',
-        'owner' : 'Madison',
-        'breed' : 'Ragdoll',
-        'location' : 'San Francisco'
-    },
-    'Dog' : {
-        'name' : 'Luna',
-        'owner' : 'Arthur',
-        'breed' : 'Golden Retriever',
-        'location' : 'Los Angeles'
+def pets_and_owners():
+    pets_details = {
+        'Cat': {
+            'name' : 'Poppy',
+            'owner' : 'Madison',
+            'breed' : 'Ragdoll',
+            'location' : 'San Francisco'
+        },
+        'Dog' : {
+            'name' : 'Luna',
+            'owner' : 'Arthur',
+            'breed' : 'Golden Retriever',
+            'location' : 'Los Angeles'
+        }
     }
+
+    for pet, details in pets_details.items():
+        print(f'{pet}')
+        for key, value in details.items():
+            print(f'\t{key} -> {value}')
+
+# 6-9 favorite places
+favorite_places = {
+    'Oliver' : ['The British Museum', 'London Eye', 'Kew Gardens'],
+    'Leo' : ['Buckingham Palace'],
+    'Harry' : ['Tower Of London', 'Tower Bridge'],
+    'Oscar' : ['River Thames', 'Madame Tussaud\'s']
 }
 
-for pet, details in pets_details.items():
-    print(f'{pet}')
-    for key, value in details.items():
-        print(f'\t{key} -> {value}')
+for name, locations in favorite_places.items():
+    if len(locations) <= 1:
+        print(f'{name}\'s favorite location is', locations[0])
+    else:
+        print(f'{name}\'s favorite locations is')
+        for location in locations:
+            print(f'\t⁜ {location}')
+
+
+# 6-10 Favorite Numbers:
