@@ -1,10 +1,28 @@
-# 6-1 Person
-a_person = {
-    'first_name': 'John',
-    'last_name': 'Max',
-    'age': 50,
-    'city': 'London'
-}
+# 6-1 Person and 6-7 Peoples
+
+def dictionary_game():
+    a_person = {
+        'first_name': 'John',
+        'last_name': 'Max',
+        'age': 50,
+        'city': 'London'
+    }
+
+    b_person = {
+        'first_name': 'Mark',
+        'last_name': 'Tailor',
+        'age': 24,
+        'city': 'Berlin'
+    }
+
+    people = [a_person, b_person]
+
+    for person in people:
+        print(f'Person: {person["first_name"]}')
+        for key, value in person.items():
+            print(f'\t› {key.title()}: {str(value).title()}')
+        print('')
+
 
 # 6-2 Favorite Number
 peoples_fav_numbers = {
@@ -80,3 +98,24 @@ def favorite_languages_of_peoples():
         else:
             print(f'Thank you {person.title()}! for taking the poll and voted for your favorite language! :)')
 
+
+# 6-8 Pets:
+pets_details = {
+    'Cat': {
+        'name' : 'Poppy',
+        'owner' : 'Madison',
+        'breed' : 'Ragdoll',
+        'location' : 'San Francisco'
+    },
+    'Dog' : {
+        'name' : 'Luna',
+        'owner' : 'Arthur',
+        'breed' : 'Golden Retriever',
+        'location' : 'Los Angeles'
+    }
+}
+
+for pet, details in pets_details.items():
+    print(f'{pet}')
+    for key, value in details.items():
+        print(f'\t{key} -> {value}')
