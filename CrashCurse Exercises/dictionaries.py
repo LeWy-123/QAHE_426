@@ -125,20 +125,71 @@ def pets_and_owners():
             print(f'\t{key} -> {value}')
 
 # 6-9 favorite places
-favorite_places = {
-    'Oliver' : ['The British Museum', 'London Eye', 'Kew Gardens'],
-    'Leo' : ['Buckingham Palace'],
-    'Harry' : ['Tower Of London', 'Tower Bridge'],
-    'Oscar' : ['River Thames', 'Madame Tussaud\'s']
-}
+def fav_places():
+    favorite_places = {
+        'Oliver' : ['The British Museum', 'London Eye', 'Kew Gardens'],
+        'Leo' : ['Buckingham Palace'],
+        'Harry' : ['Tower Of London', 'Tower Bridge'],
+        'Oscar' : ['River Thames', 'Madame Tussaud\'s']
+    }
 
-for name, locations in favorite_places.items():
-    if len(locations) <= 1:
-        print(f'{name}\'s favorite location is', locations[0])
-    else:
-        print(f'{name}\'s favorite locations is')
-        for location in locations:
-            print(f'\t⁜ {location}')
+    for name, locations in favorite_places.items():
+        if len(locations) <= 1:
+            print(f'{name}\'s favorite location is', locations[0])
+        else:
+            print(f'{name}\'s favorite locations is')
+            for location in locations:
+                print(f'\t⁜ {location}')
 
 
-# 6-10 Favorite Numbers:
+# 6-11 Cities
+def print_CAPITALS_and_facts():
+    capitals = {
+        'Austria' : {
+            'capital' : 'Viena',
+            'population' : 9_118_472,
+            'facts' : 'Austria, largely mountainous landlocked country of south-central Europe. Together with Switzerland, '
+                     'it forms what has been characterized as the neutral core of Europe, notwithstanding Austria’s full '
+                     'membership since 1995 in the supranational European Union (EU).',
+            'language' : 'german'
+        },
+        'Hungary' : {
+            'capital' : 'Budapest',
+            'population' : 9_994_993,
+            'facts' : 'Hungary is also the birthplace of many famous people. Erno Rubik, a sculptor and professor, '
+                      'invented the Rubik\'s Cube in 1974. Hungary boasts 13 Nobel Prize winners, and magician Harry '
+                      'Houdini was also born in the country\'s capital, Budapest. The Eastern European country\'s cuisine '
+                      'primarily consists of meat dishes.',
+            'language' : 'hungarian'
+        },
+        'Portugal' : {
+            'capital' : 'Portugal',
+            'population' : 10_420_938,
+            'facts' : "Portugal and Britain are best friends. In fact, they have the oldest official continuous treaty "
+                      "between two countries in the entire world, dating back to 1386. The national flower of Portugal is "
+                      "lavender. Until the famous expeditions by Portuguese sailors in the 15th century, Cape St Vincent "
+                      "at the western end of the Algarve was believed to be the end of the world. At 12 miles long, "
+                      "the Vasco de Gama Bridge in Lisbon is the longest bridge in Europe. The Portuguese language has "
+                      "600 words that come from Arabic, from when the country was part of the huge Moorish/Arabic empire.",
+            'language' : 'portuguese'
+        },
+        'United_Kingdom' : {
+            'capital' : 'London',
+            'population' : 69_272_487,
+            'facts' : 'Brits drink a lot of tea... about 100 million cups every day! The stereotype that the British '
+                      'drink a lot of tea is immediately confirmed with this fun fact. They drink around 100-160 million '
+                      'cups of tea daily, which is about 36 billion every year. The difference from most of the countries '
+                      'in the world is that almost all the tea drinkers in the UK (98%) add milk to their cup of tea.',
+            'language' : 'english'
+        }
+    }
+
+    for country, details in capitals.items():
+        print(f'Facts and details from {country}:')
+        for fact, values in details.items():
+            print(f'\t⁜{fact.title()}, {str(values).title()}')
+        print()
+
+# 6-12 Extension:
+if __name__ == '__main__':
+    print('Yes')
