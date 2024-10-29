@@ -35,3 +35,12 @@ print('\nAdjusting brightness...\n')
 for i in range(0, brightness, 2):
     print(f'Brightness level: {"*"*i}')
 
+# Activity 4: Characters
+print("What word do you see?")
+user_word =input()
+
+print('Displaying index positions...')
+for position in range(0, len(user_word)):
+    print(f'index: {position}:', user_word[position])
+
+print('Done!')
