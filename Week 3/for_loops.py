@@ -1,4 +1,5 @@
 # Activity 1: Simple Loop
+
 print('How many mountains should I display?')
 mountains = int(input('amount> '))
 i = 0
@@ -27,7 +28,7 @@ print('Target archived!')
 
 # Activity 3: Range
 print('what level of brightness is required?')
-brightness = int(input('amount> '))         # promoting the user for the brighness level
+brightness = int(input('amount> '))         # promoting the user for the brightness level
 
 
 print('\nAdjusting brightness...\n')
@@ -44,3 +45,8 @@ for position in range(0, len(user_word)):
     print(f'index: {position}:', user_word[position])
 
 print('Done!')
+
+# Activity 5: Reverse Word (~ minutes)
+print('What phrase do you want to see in reverse?')
+parse = input('parse: ')
+parse_length = len(parse)
