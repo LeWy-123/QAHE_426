@@ -34,6 +34,7 @@ energy_level = int(input())
 print('Please enter the shield level.')
 shield_level = int(input())
 print('\nHealth has been set.\n')
-print(f'Lives: {"♥"*lives}')
+print(f'Lives:        {"♥"*lives}')
 print(f'Energy level: {"✭"*energy_level}')
 print(f'Shield level: {"Θ"*shield_level}')
+
