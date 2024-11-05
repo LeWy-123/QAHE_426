@@ -8,7 +8,6 @@ def listen():
             break       # break out the loop and program terminates
 
 
-
 # Activity 2: Nesting
 def identify():
     object_seen = input('What lies before us? ')
