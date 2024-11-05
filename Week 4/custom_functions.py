@@ -32,3 +32,17 @@ def escape_by(plan=None):
 escape_by("jumping over")
 escape_by("running around")
 escape_by("cross bridge ahead")
+print()
+# Activity 4: Loop
+def cross_bridge(step):             # Defining the method
+    i = 0                           # creating the iterator variable
+    while i < step:                 # engaging the loop which runs till reaches {step} count
+        i += 1
+        print('Crossed step.')      # displays the requested string
+        if i % 5 == 0:              # this code checks whether the iterator 'i' is multiplies of 5. every 5th iteration
+            if i <= 5:              # displays the required message
+                print('We must keep going!')
+            elif i > 5:
+                print('The bridge is collapsing!')
+
+cross_bridge(11)
