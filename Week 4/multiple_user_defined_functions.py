@@ -11,3 +11,4 @@ def create_ladder():
     display_ladder(steps)
 
 create_ladder()
+# Activity 2: Return Values
