@@ -29,6 +29,7 @@ def escape_by(plan=None):
     else:
         print('We cannot escape that way! The boulder is in the way!')
 
+# calling the method
 escape_by("jumping over")
 escape_by("running around")
 escape_by("cross bridge ahead")
@@ -46,3 +47,15 @@ def cross_bridge(step):             # Defining the method
                 print('The bridge is collapsing!')
 
 cross_bridge(11)
+
+# Activity 5: Multiple Parameters
+def climb_ladder(number_of_steps_remaining, number_of_steps_crossed):
+    if(number_of_steps_remaining > number_of_steps_crossed):             # Compares 2 numbers
+        print("Still some way to go!")
+    else:
+        print("We are almost there!")
+
+# calling the method
+climb_ladder(5, 2)
+climb_ladder(2, 5)
+
