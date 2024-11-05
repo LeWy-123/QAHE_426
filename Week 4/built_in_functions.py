@@ -1,3 +1,4 @@
+# Activity 1: ASCII Value
 def char_to_ascii():
     print('Program Started!')
     char = input('Please enter a character: ')
@@ -8,6 +9,7 @@ def char_to_ascii():
 
     print('Program Ended!')
 
+# Activity 2: ASCII character
 def ascii_to_char():
     code = int(input('Please enter a code: '))
     if 32<=code<=126:
@@ -17,9 +19,3 @@ def ascii_to_char():
 
     print('Program Ended!')
 
-def greet_user():
-    # something
-    user = input('Please enter your name: ')
-    print(f'Hello, {user}')
-
-greet_user()
