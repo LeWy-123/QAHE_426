@@ -15,3 +15,5 @@ def identify():
         print('It\'s time to run!')
     else:
         print(f'We will be fi ne. coz it\'s {object_seen}.')
+
+# Activity 3:
