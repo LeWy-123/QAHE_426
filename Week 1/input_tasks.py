@@ -14,3 +14,26 @@ print(f'##########\n'
       f'##########\n')
 
 # Activity 3
+print("What is your name?")
+name = input()
+
+print(f'How old are you (in years)?')
+age = input()
+print(f'How tall are you (in centimeters)?')
+height = (int(input()) ** 2) / 10000
+print(f'How much do you weigh? (in kilograms)')
+weight = int(input())
+
+print(f'Dear {name} you are {age} years old and your BMI is {weight/height}.')
+
+# Activity 4: String operator
+print('Please enter the number of lives.')
+lives = int(input())
+print('Please enter the energy level.')
+energy_level = int(input())
+print('Please enter the shield level.')
+shield_level = int(input())
+print('\nHealth has been set.\n')
+print(f'Lives: {"♥"*lives}')
+print(f'Energy level: {"✭"*energy_level}')
+print(f'Shield level: {"Θ"*shield_level}')
