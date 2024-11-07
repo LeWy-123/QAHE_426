@@ -1,5 +1,5 @@
 import random
-import week 1
+import Week_1.input_tasks
 # Activity 1: Importing Modules
 def guess_game():
     print('Please enter the minimum value: ')
