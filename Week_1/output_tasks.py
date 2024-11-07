@@ -24,3 +24,10 @@ print("\' Displays a single quote")
 
 # extended
 print('\t"I am programming!"')
+
+#Activity 4: Ascii Art
+# Display a robot
+print("##########")
+print("#  ∩  ∩  #")
+print("#  ____  #")
+print("##########")
