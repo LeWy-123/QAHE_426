@@ -1,4 +1,6 @@
 import random
+import week 1
+# Activity 1: Importing Modules
 def guess_game():
     print('Please enter the minimum value: ')
     min_value = int(input())
@@ -21,5 +23,6 @@ def guess_game():
             print('error!')
             break
 
-
 #guess_game() commented out not to run
+
+# Activity 2: Multiple Module
