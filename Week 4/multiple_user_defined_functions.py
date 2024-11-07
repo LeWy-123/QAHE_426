@@ -10,7 +10,7 @@ def create_ladder():
     steps = int(input('How many steps remain?\n->'))
     display_ladder(steps)
 
-#create_ladder()
+#create_ladder()            i comment out not to run the code
 # Activity 2: Return Values
 def sum_weights(weight_npc, weight_inv):                    # summing up two arguments
     try:                                                    # error handling if not integer then returns an error
@@ -37,22 +37,23 @@ def run():
     else:
         print('Please enter either sum or average.')        # if the options was wrong its displays a message and quits
 
-#run()
+#run()          i comment out not to run the code
 # Activity 3: Word Manipulation
 def display_in_box(text):
-    length = len(text)
-    print('\U00002014'  *(length  +6))         # UTF-32 format character multiplied by length of the string plus 6
-    print(f'|  {text : ^35}  |')               # f string formating to adjust the text to the center. and pipe as border
-    print('\U0000203E' * (length + 6))
+    formated = f'|  {text : ^35}  |'
+    length = len(formated)
+    print('\U00002014'  *(length))         # UTF-32 format character multiplied by length of the string plus 6
+    print(formated)                            # f string formating to adjust the text to the center. and pipe as border
+    print('\U0000203E' * (length))
 
 def lower_case(text):                   # built-in function to swap characters to lowercase
-    return text.lower()
+    print(text.lower())
 
 def upper_case(text):                   # built-in function to swap characters to uppercase
-    return text.upper()
+    print(text.upper())
 
 def mirrored(text):                     # mirroring the text by built-in function
-    return text[::-1]
+    print(text[::-1])
 
 def repeat(text):
     i = 0
@@ -70,4 +71,35 @@ def repeat(text):
                                         # are not compatible
         pass
 
+def word_manipulation():
+    while True:
+        print("""                 
+1) Display in a Box – display the word in an ASCII art box
+2) Display Lower-case – display the word in lower-case e.g. hello
+3) Display Upper-case – display the word in upper-case e.g. HELLO
+4) Display Mirrored – display the word with its mirrored word e.g. Hello | olleH
+5) Repeat – ask the user how many times to display the word and then display the word that many times alternating
+   between upper-case and lower-case.""")       # copied and pasted from the task the prompt
+        option = input('-> ')                   # the options prompt there are 6 options one is for fun.
+        if option == '1':
+            text = input('Enter a word: ')
+            display_in_box(text)
+        elif option == '2':
+            text = input('Enter a word: ')
+            lower_case(text)
+        elif option == '3':
+            text = input('Enter a word: ')
+            upper_case(text)
+        elif option == '4':
+            text = input('Enter a word to mirror: ')
+            mirrored(text)
+        elif option == '5':
+            text = input('Enter a word to repeat: ')
+            repeat(text)
+        elif option == '6':
+            print('Hehe no options 6. :D')
+        else:
+            print('program quit!...')
+            break
 
+#word_manipulation()                i comment out not to run the code
