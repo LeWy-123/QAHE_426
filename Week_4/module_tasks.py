@@ -30,7 +30,7 @@ def guess_game():
 # Activity 2: Multiple Module
 def run_week_one():
     print('Which program in "Week 1" do you wish to run?')
-    print(f'\t⦿ simple_message \tout\n',
+    print(f'\t"⦿ simple_message" {"> output_tasks" :>25}\n',
           f'\t⦿ simple_message2 {"> output_tasks" :>25}\n',
           f'\t⦿ multiline_text {"> output_tasks" :>25}\n',
           f'\t⦿ escape_chars {"> output_tasks" :>25}\n',
