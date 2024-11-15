@@ -1,6 +1,8 @@
 import random
 import Week_1.output_tasks as o
 import Week_1.input_tasks as inp
+import Week_2.if_statements
+import Week_2.nested_if
 
 # Activity 1: Importing Modules
 def guess_game():
